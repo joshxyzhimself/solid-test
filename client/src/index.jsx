@@ -1,3 +1,6 @@
+
+// @ts-check
+ 
 import { createSignal, onCleanup } from "solid-js";
 import { render } from "solid-js/web";
 
@@ -9,4 +12,4 @@ const App = () => {
   return <div>{count()}</div>;
 };
 
-render(() => <App />, document.getElementById("app"));
+render(() => (<App />), document.getElementById('app'));

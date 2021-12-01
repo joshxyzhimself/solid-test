@@ -1,0 +1,26 @@
+{
+  "name": "solid-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/esbuild ./client/src/index.jsx --outfile=./client/dist/index.js --loader:.woff=file --loader:.woff2=file --target=es6 --sourcemap --bundle --watch",
+    "prod": "./node_modules/.bin/esbuild ./client/src/index.jsx --outfile=./client/dist/index.js --loader:.woff=file --loader:.woff2=file --target=es6 --sourcemap --bundle --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshxyzhimself/solid-test.git"
+  },
+  "author": "joshxyzhimself <joshxyzhimself@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshxyzhimself/solid-test/issues"
+  },
+  "homepage": "https://github.com/joshxyzhimself/solid-test#readme",
+  "dependencies": {
+    "esbuild": "^0.14.1",
+    "fastify": "^3.24.1",
+    "fastify-static": "^4.5.0",
+    "solid-js": "^1.2.5"
+  }
+}
